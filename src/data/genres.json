@@ -1,0 +1,17 @@
+
+[
+  { "id": "g1", "name": "Action" },
+  { "id": "g2", "name": "Comedy" },
+  { "id": "g3", "name": "Drama" },
+  { "id": "g4", "name": "Romance" },
+  { "id": "g5", "name": "Thriller" },
+  { "id": "g6", "name": "Sci-Fi" },
+  { "id": "g7", "name": "Family" },
+  { "id": "g8", "name": "Adventure" },
+  { "id": "g9", "name": "Mystery" },
+  { "id": "g10", "name": "Bollywood" },
+  { "id": "g11", "name": "Slice of Life" },
+  { "id": "g12", "name": "Historical" },
+  { "id": "g13", "name": "War" },
+  { "id": "g14", "name": "Sitcom" }
+]

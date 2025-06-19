@@ -1,0 +1,39 @@
+
+[
+  {
+    "id": "ltv1",
+    "channelName": "HPF News Live",
+    "description": "24/7 live news coverage, breaking stories, and in-depth analysis from around the world.",
+    "logoUrl": "https://images.unsplash.com/photo-1582072291448-5db861a71699?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxuZXdzJTIwY2hhbm5lbHxlbnwwfHx8fDE3NTAyMjQ4NjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHintLogo": "news channel",
+    "genre": "News",
+    "streamUrl": "#"
+  },
+  {
+    "id": "ltv2",
+    "channelName": "Bollywood Beats TV",
+    "description": "Non-stop Bollywood music videos, interviews with stars, and latest movie trailers.",
+    "logoUrl": "https://images.unsplash.com/photo-1735212769704-d03b95dd1a14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtdXNpYyUyMGNoYW5uZWx8ZW58MHx8fHwxNzUwMjI0ODYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHintLogo": "music channel",
+    "genre": "Music",
+    "streamUrl": "#"
+  },
+  {
+    "id": "ltv3",
+    "channelName": "Sports Arena HD",
+    "description": "Live sports action, match highlights, and expert commentary on cricket, football, and more.",
+    "logoUrl": "https://images.unsplash.com/photo-1612151387614-0d29a04ff5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBicm9hZGNhc3R8ZW58MHx8fHwxNzUwMjI0ODYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHintLogo": "sports broadcast",
+    "genre": "Sports",
+    "streamUrl": "#"
+  },
+  {
+    "id": "ltv4",
+    "channelName": "Classic Cinema Channel",
+    "description": "Relive the golden era of Hindi cinema with timeless classics and retro hits.",
+    "logoUrl": "https://images.unsplash.com/photo-1547248085-bf272dd7cb4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGFzc2ljJTIwbW92aWVzfGVufDB8fHx8MTc1MDIyNDg2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHintLogo": "classic movies",
+    "genre": "Movies",
+    "streamUrl": "#"
+  }
+]

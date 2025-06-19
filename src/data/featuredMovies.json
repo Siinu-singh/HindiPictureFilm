@@ -1,0 +1,46 @@
+
+{
+  "heroMovie": {
+    "id": "jw3",
+    "title": "JOHN WICK",
+    "subtitle": "Chapter 3 - Parabellum (2019)",
+    "releaseInfo": "May, 17",
+    "genres": ["action", "thriller"],
+    "backgroundImageUrl": "https://placehold.co/1000x1500.png",
+    "dataAiHint": "action hero portrait",
+    "trailerUrl": "#",
+    "watchUrl": "#"
+  },
+  "carouselMovies": [
+    {
+      "id": "cm1",
+      "title": "Movie One",
+      "posterUrl": "https://placehold.co/200x300.png",
+      "dataAiHint": "adventure film"
+    },
+    {
+      "id": "cm2",
+      "title": "Love Again",
+      "posterUrl": "https://placehold.co/200x301.png",
+      "dataAiHint": "romance movie"
+    },
+    {
+      "id": "cm3",
+      "title": "The Boy",
+      "posterUrl": "https://placehold.co/200x302.png",
+      "dataAiHint": "thriller movie"
+    },
+    {
+      "id": "cm4",
+      "title": "Figures",
+      "posterUrl": "https://placehold.co/200x303.png",
+      "dataAiHint": "drama movie"
+    },
+    {
+      "id": "cm5",
+      "title": "Action Packed",
+      "posterUrl": "https://placehold.co/200x304.png",
+      "dataAiHint": "action film"
+    }
+  ]
+}

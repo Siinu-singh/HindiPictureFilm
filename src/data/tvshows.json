@@ -1,0 +1,56 @@
+
+[
+  {
+    "id": "tv1",
+    "title": "Metro Diaries",
+    "description": "A slice-of-life series following the interconnected lives of diverse individuals navigating love, career, and challenges in a bustling metropolis.",
+    "posterUrl": "https://images.unsplash.com/photo-1575795899293-765cb1044004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaXR5JTIwbGlmZSUyMHNlcmllc3xlbnwwfHx8fDE3NTAyMjQ2NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHintPoster": "city life series",
+    "bannerUrl": "https://placehold.co/1200x500.png",
+    "dataAiHintBanner": "urban sprawl",
+    "releaseYear": 2023,
+    "genres": ["Drama", "Slice of Life"],
+    "rating": 8.9,
+    "seasons": 2,
+    "network": "Hindipicturefilm Originals"
+  },
+  {
+    "id": "tv2",
+    "title": "Chronicles of the Crown",
+    "description": "A grand historical epic detailing the rise and fall of a powerful dynasty, filled with political intrigue, betrayal, and heroism.",
+    "posterUrl": "https://images.unsplash.com/photo-1578321270951-88bd84d09a64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoaXN0b3JpY2FsJTIwZHJhbWF8ZW58MHx8fHwxNzUwMjI0NjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHintPoster": "historical drama",
+    "bannerUrl": "https://placehold.co/1200x501.png",
+    "dataAiHintBanner": "royal court",
+    "releaseYear": 2024,
+    "genres": ["Historical", "Drama", "War"],
+    "rating": 9.3,
+    "seasons": 1,
+    "network": "History Channel"
+  },
+  {
+    "id": "tv3",
+    "title": "The Laughing Stock",
+    "description": "A witty sitcom centered around the chaotic behind-the-scenes world of a late-night comedy sketch show.",
+    "posterUrl": "https://images.unsplash.com/photo-1527224857830-43a7acc85260?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21lZHklMjB0diUyMHNob3d8ZW58MHx8fHwxNzUwMjI0NjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHintPoster": "comedy tv show",
+    "releaseYear": 2023,
+    "genres": ["Comedy", "Sitcom"],
+    "rating": 8.5,
+    "seasons": 3,
+    "network": "Comedy Central"
+  },
+  {
+    "id": "tv4",
+    "title": "Sector 7: Anomaly",
+    "description": "A thrilling sci-fi series where a team of scientists at a remote research facility uncovers a mysterious anomaly with world-altering implications.",
+    "posterUrl": "https://images.unsplash.com/photo-1699862160391-1aa177a3baff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2NpLWZpJTIwbXlzdGVyeXxlbnwwfHx8fDE3NTAyMjQ2NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHintPoster": "sci-fi mystery",
+    "releaseYear": 2024,
+    "genres": ["Sci-Fi", "Mystery", "Thriller"],
+    "rating": 8.2,
+    "seasons": 1,
+    "network": "SyFy"
+  }
+]
+

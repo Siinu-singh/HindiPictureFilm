@@ -1,0 +1,111 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 96%; /* Light Mode: Very Light Gray #f5f5f5 */
+    --foreground: 0 0% 3.9%; /* Light Mode: Dark text */
+    --card: 0 0% 100%; /* Light Mode: White */
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 19 98% 55%; /* Vibrant Orange #FD5E1E */
+    --primary-foreground: 20 100% 97%; /* Light Orange/White for text on primary */
+    --secondary: 0 0% 92%; /* Light Mode: Light Gray */
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 208 99% 36%; /* Electric Blue #0165b9 */
+    --accent-foreground: 0 0% 98%; /* Light text for accent */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%; /* Light Mode: Light Gray Border */
+    --input: 0 0% 89.8%;
+    --ring: 19 98% 55%; /* Primary color for rings */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* RGB versions for effects like glows */
+    --primary-rgb: 253, 94, 30;
+    --accent-rgb: 1, 101, 185;
+    --background-rgb: 245, 245, 245;
+    --foreground-rgb: 10, 10, 10;
+    --border-rgb: 229, 229, 229;
+  }
+
+  .dark {
+    /* Updated dark theme based on reference image (dark blue/purple) */
+    --background: 250 30% 10%; /* Dark Violet */
+    --foreground: 0 0% 95%; /* Light text */
+    --card: 250 30% 15%; /* Slightly lighter than background */
+    --card-foreground: 0 0% 95%;
+    --popover: 250 30% 15%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 19 98% 55%; /* Vibrant Orange #FD5E1E (kept from PRD for neon accents) */
+    --primary-foreground: 20 100% 97%; 
+    --secondary: 250 30% 20%; /* Darker Gray/Violet */
+    --secondary-foreground: 0 0% 95%;
+    --muted: 250 30% 25%;
+    --muted-foreground: 0 0% 65%; 
+    --accent: 208 99% 36%; /* Electric Blue #0165b9 (kept from PRD) */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 250 30% 20%; /* Darker Violet Border */
+    --input: 250 30% 22%;
+    --ring: 19 98% 55%; 
+
+    /* RGB versions for effects like glows */
+    --primary-rgb: 253, 94, 30;
+    --accent-rgb: 1, 101, 185;
+    --background-rgb: 38, 25, 70; /* Corresponds to 250 30% 10% approx */
+    --foreground-rgb: 242, 242, 242;
+    --border-rgb: 51, 41, 82; /* Corresponds to 250 30% 20% approx */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+  h5 {
+    @apply font-headline;
+  }
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--primary) / 0.5);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--primary) / 0.8);
+}
+/* For Firefox */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary) / 0.5) transparent;
+}
+

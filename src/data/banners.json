@@ -1,0 +1,35 @@
+
+[
+  {
+    "id": "banner-m1",
+    "title": "Featured: Echoes of Tomorrow",
+    "imageUrl": "https://images.unsplash.com/photo-1620002093372-0b57618cfdf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY2ktZmklMjBtb3ZpZXxlbnwwfHx8fDE3NTAxODgxODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHint": "sci-fi movie",
+    "movieId": "m1",
+    "description": "Unravel a conspiracy that threatens time itself."
+  },
+  {
+    "id": "banner-tv1",
+    "title": "New Series: Metro Diaries",
+    "imageUrl": "https://images.unsplash.com/photo-1712146947131-efbae9ebb55b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaXR5JTIwbGlmZSUyMGRyYW1hfGVufDB8fHx8MTc1MDIyNDY0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHint": "city life drama",
+    "tvShowId": "tv1", 
+    "description": "Follow the interconnected lives in a bustling metropolis."
+  },
+  {
+    "id": "banner-m2",
+    "title": "Critically Acclaimed: The Last Spice Merchant",
+    "imageUrl": "https://images.unsplash.com/photo-1592856428024-81a860f3597a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkcmFtYSUyMGFkdmVudHVyZXxlbnwwfHx8fDE3NTAxODgxODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHint": "drama adventure",
+    "movieId": "m2",
+    "description": "A heartwarming journey of discovery and flavor."
+  },
+  {
+    "id": "banner-livetv-hero",
+    "title": "Watch Live TV Now!",
+    "imageUrl": "https://images.unsplash.com/photo-1651465531201-7e430660fd82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsaXZlJTIwdGVsZXZpc2lvbiUyMGJyb2FkY2FzdHxlbnwwfHx8fDE3NTAyMjQ4NjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "dataAiHint": "live television broadcast",
+    "description": "Stream your favorite channels, sports, news, and entertainment live."
+  }
+]
+

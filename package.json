@@ -9,7 +9,8 @@
     "genkit:watch": "genkit start -- node --watch src/ai/dev.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.8.0",

@@ -71,7 +71,7 @@ export default function Sidebar() {
             animate="open"
             exit="closed"
             onClick={closeSidebar}
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
             aria-hidden="true"
           />
           <motion.aside

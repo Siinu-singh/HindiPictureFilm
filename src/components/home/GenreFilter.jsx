@@ -1,9 +1,10 @@
+
 "use client";
 
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ListFilter } from 'lucide-react';
-
+import Link from 'next/link';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -23,7 +24,7 @@ const itemVariants = {
   },
 };
 
-export default function GenreFilter({ genres, selectedGenre, onSelectGenre }) {
+export default function GenreFilter({ genres, selectedGenre, basePath }) {
   return (
     <section className="mb-12" aria-labelledby="genre-filter-title">
       <div className="flex items-center mb-4">
@@ -41,22 +42,24 @@ export default function GenreFilter({ genres, selectedGenre, onSelectGenre }) {
         <motion.div variants={itemVariants}>
           <Button
             variant={selectedGenre === null ? 'default' : 'outline'}
-            onClick={() => onSelectGenre(null)}
             className="rounded-full transition-all duration-200 ease-in-out transform hover:scale-105"
             aria-pressed={selectedGenre === null}
+            asChild
           >
-            All Genres
+            <Link href={basePath}>All Genres</Link>
           </Button>
         </motion.div>
         {genres.map((genre) => (
           <motion.div key={genre.id} variants={itemVariants}>
             <Button
               variant={selectedGenre === genre.id ? 'default' : 'outline'}
-              onClick={() => onSelectGenre(genre.id)}
               className="rounded-full transition-all duration-200 ease-in-out transform hover:scale-105"
               aria-pressed={selectedGenre === genre.id}
+              asChild
             >
-              {genre.name}
+              <Link href={`${basePath}?genre=${encodeURIComponent(genre.name.toLowerCase())}`}>
+                {genre.name}
+              </Link>
             </Button>
           </motion.div>
         ))}

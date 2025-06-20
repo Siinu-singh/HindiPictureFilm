@@ -175,11 +175,11 @@ export default function HomePage() {
               >
                 <div className="md:col-span-2 relative aspect-video md:aspect-[4/3] w-full">
                   <Image 
-                    src="https://images.unsplash.com/photo-1604975701397-eff5812f7f98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2xseXdvb2QlMjBjb2xsYWdlfGVufDB8fHx8MTc1MDQxNzM1Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+                    src="https://images.unsplash.com/photo-1608170825938-a8ea0305d46c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaW5lbWF8ZW58MHx8fHwxNzUwMzI5ODk2fDA&ixlib=rb-4.1.0&q=80&w=1080"
                     alt="Hindi Cinema Collage" 
                     fill
                     className="rounded-lg shadow-xl object-cover"
-                    data-ai-hint="bollywood collage"
+                    data-ai-hint="cinema hall"
                     sizes="(max-width: 768px) 100vw, 40vw"
                   />
                 </div>
@@ -332,3 +332,4 @@ export default function HomePage() {
     </div>
   );
 }
+

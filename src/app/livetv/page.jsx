@@ -26,7 +26,7 @@ const LiveTVPageSkeleton = () => (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-4 md:gap-6">
           {[...Array(10)].map((_, i) => ( 
             <div key={i} className="rounded-xl overflow-hidden shadow-lg bg-card">
-              <Skeleton className="w-full h-32 sm:h-40 md:h-48" />
+              <Skeleton className="w-full h-40 sm:h-48 md:h-56" /> {/* Updated height */}
               <div className="p-3 md:p-4">
                 <Skeleton className="h-4 md:h-5 w-3/4 mb-2 rounded" />
                 <Skeleton className="h-3 w-full mb-1 rounded" />
@@ -72,26 +72,38 @@ function LiveTVPageContent() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let isMounted = true;
     const fetchPageData = async () => {
-      setLoading(true);
+      // setLoading(true); // Already true by default initialization
       try {
         const bannersData = await getBanners();
         const liveTVHero = bannersData.find(b => b.id === 'banner-livetv-hero') || bannersData[0];
-        setHeroBanner(liveTVHero);
+        
+        const channelsData = await getLiveTVChannels({ limit: 10 });
+        
+        const showsData = await getTVShows({ limit: 8 });
 
-        const channelsData = await getLiveTVChannels({ limit: 10 }); // Limiting for main display
-        setChannels(channelsData);
-
-        const showsData = await getTVShows({ limit: 8 }); // For trending shows carousel
-        setTrendingShows(showsData);
+        if (isMounted) {
+          setHeroBanner(liveTVHero);
+          setChannels(channelsData);
+          setTrendingShows(showsData);
+        }
 
       } catch (error) {
         console.error("Failed to fetch Live TV page data:", error);
+        // Potentially set error state here if needed
+      } finally {
+        if (isMounted) {
+          setLoading(false);
+        }
       }
-      setLoading(false);
     };
     fetchPageData();
-  }, []);
+
+    return () => {
+      isMounted = false;
+    };
+  }, []); // Empty dependency array means this runs once on mount and cleans up on unmount
 
   if (loading) {
     return <LiveTVPageSkeleton />;
@@ -102,7 +114,9 @@ function LiveTVPageContent() {
       <Sidebar />
       <TopNavbar />
       <main className="flex-1 flex flex-col overflow-x-hidden"> {/* No padding here, ClientLayout handles it */}
-        <HeroLiveTV banner={heroBanner} />
+        
+        {heroBanner ? <HeroLiveTV banner={heroBanner} /> : <Skeleton className="w-full h-[60vh] md:h-[70vh] mb-8 md:mb-12" /> }
+
 
         <motion.section
           id="live-channels-grid"
@@ -127,7 +141,7 @@ function LiveTVPageContent() {
         </motion.section>
 
         {trendingShows.length > 0 && (
-           <div className="bg-background"> {/* Ensure HorizontalMediaList has a consistent background, padding handled by HorizontalMediaList itself */}
+           <div className="bg-background overflow-x-hidden"> {/* Ensure HorizontalMediaList has a consistent background, padding handled by HorizontalMediaList itself */}
              <HorizontalMediaList 
                 items={trendingShows} 
                 CardComponent={TVShowCard} 

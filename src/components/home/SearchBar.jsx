@@ -126,7 +126,7 @@ export default function SearchBar() {
                       transition-shadow duration-300"></div>
 
       {isPopupOpen && (
-        <div className="absolute top-full mt-2 w-[min(80vw,400px)] right-0 sm:left-0 sm:right-auto sm:w-full rounded-md bg-card shadow-xl border border-border/50 z-50 max-h-80 sm:max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-transparent">
+        <div className="absolute top-full mt-2 w-[min(80vw,400px)] right-0 sm:left-0 sm:right-auto sm:w-full rounded-md bg-card shadow-xl border border-border/50 z-50 max-h-80 sm:max-h-96 overflow-y-auto scrollbar-none">
           {isLoading && (
             <div className="p-4 flex items-center justify-center text-muted-foreground">
               <Loader2 className="mr-2 h-5 w-5 animate-spin" />

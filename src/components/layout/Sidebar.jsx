@@ -93,7 +93,7 @@ export default function Sidebar() {
               </Link>
             </motion.div>
 
-            <nav className="flex-grow overflow-y-auto scrollbar-thin scrollbar-thumb-primary/30 scrollbar-track-transparent pr-2">
+            <nav className="flex-grow overflow-y-auto scrollbar-none pr-2">
               <ul>
                 {navItems.map((item) => (
                   <motion.li key={item.label} variants={menuItemVariants} className="mb-1">

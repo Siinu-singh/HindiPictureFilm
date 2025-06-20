@@ -44,7 +44,7 @@ export default function HorizontalMediaList({ items, CardComponent, title }) {
       )}
       <div className="relative">
         <motion.div 
-          className="flex space-x-3 sm:space-x-4 md:space-x-6 overflow-x-auto pb-4 md:pb-6 scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-transparent" // px removed, handled by parent
+          className="flex space-x-3 sm:space-x-4 md:space-x-6 overflow-x-auto pb-4 md:pb-6 scrollbar-none" // px removed, handled by parent
           drag="x"
           dragConstraints={{ left: - (items.length * 200), right: 0 }} // Approximate constraint, adjust based on item width
           variants={itemVariants} 
@@ -63,3 +63,4 @@ export default function HorizontalMediaList({ items, CardComponent, title }) {
     </motion.section>
   );
 }
+

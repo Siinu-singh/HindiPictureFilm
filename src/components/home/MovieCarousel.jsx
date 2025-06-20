@@ -35,7 +35,7 @@ export default function MovieCarousel({ movies }) {
   return (
     <div className="relative w-full py-6 md:py-8 bg-background/50 backdrop-blur-sm"> {/* px removed */}
       <motion.div
-        className="flex space-x-3 sm:space-x-4 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-transparent" // Responsive spacing
+        className="flex space-x-3 sm:space-x-4 overflow-x-auto pb-4 scrollbar-none" // Responsive spacing
         drag="x"
         dragConstraints={{ left: -(movies.length * (160 + 16) - (typeof window !== 'undefined' ? window.innerWidth*0.8 : 300)), right: 0 }} 
         initial={{ x: 50, opacity: 0 }}
